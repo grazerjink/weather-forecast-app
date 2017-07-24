@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+<head>
+    <title>AngularJS - Dự báo thời tiết</title>
+    <meta charset="utf-8">
+
+    <!-- load bootstrap via CDN -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- load angularjs via CDN -->
+    <script type="text/javascript" src="//code.angularjs.org/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="//code.angularjs.org/1.4.9/angular-route.min.js"></script>
+    <script type="text/javascript" src="//code.angularjs.org/1.4.9/angular-resource.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+    <script type="text/javascript" src="assets/routes.js"></script>
+    <script type="text/javascript" src="assets/services/cityService.js"></script>
+    <script type="text/javascript" src="assets/services/weatherService.js"></script>
+    <script type="text/javascript" src="assets/controllers/homeController.js"></script>
+    <script type="text/javascript" src="assets/controllers/forecastController.js"></script>
+    <script type="text/javascript" src="assets/directives/weatherReport.js"></script>
+    
+    <style>
+        * {
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="">Dự báo thời tiết</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>

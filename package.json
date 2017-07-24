@@ -1,0 +1,19 @@
+{
+  "name": "weather-forecast",
+  "version": "1.0.0",
+  "description": "\"App Weather Forecast\"",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.15.3",
+    "morgan": "~1.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node", "express", "mongoose"
+  ],
+  "author": "kjapps",
+  "license": "MIT"
+}
